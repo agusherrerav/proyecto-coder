@@ -1,0 +1,92 @@
+
+nav div div ul li a {
+    color: black cursive !important;
+    margin-left: auto; }
+
+#navbarNavAltMarkup{
+    margin-left: auto;
+}
+
+.logo-aurum{
+    height: 70px;
+    width: 70px;
+    padding: 2px;
+    margin-right: 5px;
+}
+
+nav div {
+    background-color: white;
+}
+
+h1{
+    background-image: linear-gradient( to right , rgb(211, 0, 70), rgb(255, 225, 58));
+    color: white;
+    padding-left: 25%;
+    font-size: 300%;
+}
+
+h1, h2, h3{
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+body{
+    padding: 5px;
+}
+
+#contacto-formulario{
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 3%;
+}
+
+#servicios-items , #clientes-items{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+}
+
+
+
+nav{
+    font-size: large;
+}
+
+h2{
+    color: rgb(201, 0, 60);
+    padding: 2%;
+    display:inline-block;
+    flex-direction: row;
+    justify-items: center;
+}
+h2{
+    padding-top: 5px;
+    margin-right: 25%;
+    justify-content:last baseline;
+}
+
+.redes-logo{
+    color: rgb(175, 10, 46);
+}
+
+
+#imagen-qs{
+    width: 400px;
+    height: 400px;
+}
+
+.container{
+    margin-top: 2%;
+}
