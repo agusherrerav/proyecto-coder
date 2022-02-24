@@ -1,0 +1,25 @@
+/*$tipografiaPrincipal: normal 24px/1 "Open Sans", sans-serif;
+$colorAmarillo: rgb(255, 235, 145);*/
+.row {
+  background-color: white;
+}
+
+.row div {
+  border: solid 2px rgba(255, 238, 86, 0.788);
+}
+
+nav {
+  border: solid 1px #f12e58;
+}
+
+nav div {
+  background-color: white;
+}
+
+nav div div div {
+  background-color: #ffeb91;
+}
+
+body {
+  font: normal 24px/1 "Open Sans", sans-serif;
+}
