@@ -1,0 +1,13 @@
+
+$color-rosa: rgb(255, 19, 117);
+$color-amarillo:rgb(255, 255, 82);
+$mapaColores: (1:$color-rosa, 2: $color-amarillo, 3: white) ;
+
+/* Vars */
+
+$tamanoBoton: 80px;
+$tamanoTipo: 14px;
+
+/* Maps */
+
+$redes:(facebook:$color-amarillo, whatsapp:$color-rosa, instagram:$color-amarillo);

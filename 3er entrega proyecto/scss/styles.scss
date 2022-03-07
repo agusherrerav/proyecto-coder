@@ -1,0 +1,169 @@
+@import "__variables";
+
+#navbarNavAltMarkup{
+    margin-left: auto;
+}
+nav{
+    font-size: large;
+    div{
+        background-color: white;
+        div{
+            div{
+               background-color: rgb(255, 255, 255);
+               a{ 
+                   color: black cursive !important;
+                   margin-left: auto;
+                   border: 0.5px solid rgb(235, 235, 235);
+                   color: rgb(0, 0, 0);
+
+                   &:hover{
+                       background-color: $color-rosa;
+                   }
+               }
+            }
+        }
+    }
+}
+
+/* Estilos generales */
+.btn {
+    border-radius: 100%;
+    width: $tamanoBoton;
+    height: $tamanoBoton;
+    font-size: $tamanoTipo;
+}
+
+.logo-aurum{
+    height: 70px;
+    width: 70px;
+    padding: 2px;
+    margin-right: 5px;
+}
+
+h1{
+    background-image: linear-gradient( to right , $color-rosa, $color-amarillo);
+    color: white;
+    text-align: center;
+    font-size: 48px;
+}
+
+h1, h2, h3{
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+body{
+    padding: 5px;
+}
+
+#contacto-formulario{
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 3%;
+}
+
+#servicios-items , #clientes-items{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+}
+
+h2{
+    color: $color-rosa;
+    padding: 2%;
+    display:inline-block;
+    flex-direction: row;
+    justify-items: center;
+    font-size: 42px;
+}
+
+h2{
+    padding-top: 5px;
+    margin-right: 25%;
+    justify-content:last baseline;
+}
+
+.redes-logo{
+    color: $color-rosa;
+}
+
+#imagen-qs{
+    width: 400px;
+    height: 400px;
+}
+
+.container{
+    margin-top: 2%;
+}
+
+.card-img-top{
+    width: 200px;
+    height: 200px;
+    margin-left: 10%;
+}
+
+@media screen and (max-width: 992px) {
+    .inicio-abajo {
+      width: 50%;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    h1{
+    font-size: 24px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .inicio-abajo {
+      width: 50%;
+      align-items: center;
+      text-align: center;
+    }
+    #imagen-qs{
+        width: 200px;
+        height: 200px;
+        margin-left: 15%;
+        text-align: center;
+    }
+  }
+
+/* Bucle Each */
+
+@each $rosa,
+$color in $redes {
+    .#{$rosa} {
+        background-color: $color;
+    }
+}
+.newButton {
+    /* Extend */
+    @extend .btn;
+    /* map-get() */
+    background-color: map-get($redes, whatsapp);
+}
+
+
+/* Mixin */
+
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+ }
+ .btn {
+    @include sizes(100px, 100px);
+ }
+ 
